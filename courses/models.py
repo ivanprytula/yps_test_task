@@ -16,6 +16,7 @@ class CourseManager(models.Manager):
 
 
 class Course(models.Model):
+    """This class represents the Course model."""
     name = models.CharField(max_length=255, blank=False)
     start_date = models.DateTimeField()
     end_date = models.DateTimeField()
@@ -34,4 +35,5 @@ class Course(models.Model):
         return json.dumps(data, default=str)
 
     def __str__(self):
+        """Return a human readable representation of the model instance."""
         return self.name

@@ -1,8 +1,8 @@
 from django.urls import path
 
-from .api.views import (CoursesListAPIView,
+from .api.views import (CoursesCreateAPIView,
+                        CoursesListAPIView,
                         CoursesDetailsAPIView,
-                        CoursesCreateAPIView,
                         CoursesUpdateAPIView,
                         CoursesDeleteAPIView,
                         )
@@ -14,4 +14,3 @@ urlpatterns = [
     path('update/', CoursesUpdateAPIView.as_view()),
     path('delete/', CoursesDeleteAPIView.as_view()),
 ]
-
