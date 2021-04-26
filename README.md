@@ -35,7 +35,7 @@ GET http://localhost:8000/api/courses/
 Accept: application/json
 
 
-    ### Search course by name
+### Search course by name
 GET http://localhost:8000/api/courses/?name=python
 Accept: application/json
 
