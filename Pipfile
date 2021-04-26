@@ -5,9 +5,9 @@ name = "pypi"
 
 [packages]
 django = "==3.2"
-pylint-django = "~=2.4"
 
 [dev-packages]
+pylint-django = "~=2.4"
 
 [requires]
 python_version = "3.9"
